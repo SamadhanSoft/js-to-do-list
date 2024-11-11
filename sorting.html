@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---
+Array  = [40,30,12,25]
+index 0 = [30,40,12,25]
+index 1 = [30,12,40,25]
+index 2 = [30,12,25,40]
+index 3 = [12,30,25,40]
+index 4 = [12,25,30,40]
+    -->
+    <script>
+    let data = [40,30,12,25];
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+       // console.log(sort_array[i])
+        for(let j = 0; j<data.length; j++){
+            if(data[j]>data[j+1]){
+            let temp = data[j]; //i=40.j=30 40 < 30 --> no temp = 30, data[j]=40, data [i]=30
+             data[j]= data[i];
+            data[i]=temp;
+        }
+    }
+    }console.log(data)
+    </script>
+</body>
+</html>
