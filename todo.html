@@ -114,6 +114,7 @@
                     return maxid + 1;
                 }
             }
+            //Mian function 
             function showworks() {
               let workstr =
                 "<table style='width:100%;'clas='parenttable' border='1px'>";
@@ -130,7 +131,7 @@
                 workstr += "<td>" + myworks[i].workdate + "</td>";
                 workstr += "<td>" + myworks[i].worktime + "</td>";
                 workstr += "<td>" + myworks[i].actualwork + "</td>";
-                workstr += "<td><button onclick='deleteWork(" + myworks[i].id + ")'>X</button></td>";
+                workstr += "<td><button onclick='deleteWork(" + myworks[i].id + ")'>X</button></td>"; //Product Id are not showing
                 workstr += "</tr>";
                 console.log(myworks[i].workdate);
                 console.log(myworks[i].worktime);
